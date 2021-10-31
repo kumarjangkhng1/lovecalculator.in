@@ -53,27 +53,13 @@ body{
 	display: flex;
 	justify-content: center;
 	font-size: 80px;
-	color: red;
+	color: blue;
 	font-family: 'Fruktur', cursive;
 	-webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-color: black;
     animation: titlecolor 5s linear alternate infinite;
 }
-@keyframes titlecolor{
-	0%{
-		color: red;
-		-webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: yellow;
-    animation: titlecolor 5s linear alternate infinite;
-	}
-	
-	100%{
-		color: yellow;
-		-webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: red;
-    animation: titlecolor 5s linear alternate infinite;
-	}
-}
+
 .container .box .box-con{
 	columns: 2;
 	display: flex;justify-content: center;align-items: center;
@@ -151,11 +137,11 @@ clip-path: polygon(0% 0%, 0 0, 0 50%, 0 100%, 0% 100%);
 	border-top: none;
 	border-right: none;
 	border-left: none;
-	border-bottom: 2px solid #eb5744;
+	border-bottom: 2px solid #fff;
 	border-radius: 0%;
 	text-align: center;
 	font-size: 20px;
-	color: #eb5744;
+	color: #fff;
 	font-weight: bold;
 	font-family: 'comic sans ms';
 	transition: all 0.6s;
