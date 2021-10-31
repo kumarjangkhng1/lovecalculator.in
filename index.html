@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Love Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+		<h2 class="title">Love Calculator</h2>
+		<div class="box-con">
+			<div class="mypos0">
+				<input type="text" id="boyname" class="form-control" name="" placeholder="Enter Your Name" autocomplete="off">
+			</div>
+			<div class="mypos0">
+				<label class="label">=</label>
+			</div>
+			<div class="mypos0">
+				<input type="text" id="girlname" class="form-control" name="" placeholder="Enter Lover Name" autocomplete="off">
+			</div>
+		</div>
+		<div class="box-con">
+			<div class="mypos0">
+				<button type="submit" onclick="checklove()" name="" class="btn" > Check</button>
+				<button type="submit" onclick="checklove()" name="" class="btn" > Check</button>
+			</div>
+		</div>
+		<div class="box-con">
+			<div class="mypos0">
+				<input type="text"  readonly placeholder="Resutl" class="resutl-control" id="resultsh">
+				<p style="margin-top: 10px; color:red; font-weight: bold; display: none;" id="notify">*Next Check Please Refresh Page</p>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<script src="machine.js"></script>
+</body>
+</html>

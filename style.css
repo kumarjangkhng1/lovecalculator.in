@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+::placeholder{
+font-family: 'comic sans ms';
+font-weight: bold;
+font-size: 14px;
+color: #eb5744;
+transition: all 0.6s;
+letter-spacing: 0.5px;
+text-align: center;
+}
+body{
+	/*background: url('bg.jpg');*/
+	background: linear-gradient(-45deg ,#52BE80,#3498DB,#F4D03F,#f73025);
+	/*background-position: center;*/
+	background-size: 400% 400%;
+	height: 100vh;
+	transition: all 0.6s;
+	animation: changing 9s linear infinite alternate;
+}
+@keyframes changing{
+	0%{
+	background-position: 0% 50%;
+	}
+	50%{
+		background-position: 50% 100%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+.container{
+	display: flex;
+	justify-content: center;
+}
+.container .box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	/*border:2px solid red;*/
+	width: 800px;
+	height: 400px;
+	background: rgba(255,255,255,0.2);
+	backdrop-filter: blur(8px);
+	border-radius: 5px;
+	box-shadow: 8px 8px 50px #000;
+}
+.container .box .title{
+	display: flex;
+	justify-content: center;
+	font-size: 80px;
+	color: red;
+	font-family: 'Fruktur', cursive;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: yellow;
+    animation: titlecolor 5s linear alternate infinite;
+}
+@keyframes titlecolor{
+	0%{
+		color: red;
+		-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: yellow;
+    animation: titlecolor 5s linear alternate infinite;
+	}
+	
+	100%{
+		color: yellow;
+		-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+    animation: titlecolor 5s linear alternate infinite;
+	}
+}
+.container .box .box-con{
+	columns: 2;
+	display: flex;justify-content: center;align-items: center;
+	margin-top: 5%;
+}
+.container .box .box-con .mypos0{
+	padding: 10px;
+}
+.container .box .box-con .mypos0 .label{
+	font-size: 30px;
+	color: purple;
+	font-weight: bold;
+	animation: labelcolor 5s linear alternate infinite;
+}
+@keyframes labelcolor{
+	0%{
+		color: purple;
+	}
+	20%{
+		color: red;
+	}
+	40%{
+		color:yellow;
+	}
+	60%{
+		color: green;
+	}
+	80%{
+		color: pink;
+	}
+	100%{
+		color: white;
+	}
+}
+.container .box .box-con .mypos0 .form-control{
+	width: 300px;
+	height: 40px;
+	outline: none;
+	background: transparent;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 2px solid #eb5744;
+	border-radius: 0%;
+	text-align: center;
+	font-size: 20px;
+	color: #eb5744;
+	font-weight: bold;
+	font-family: 'comic sans ms';
+	transition: all 0.6s;
+}
+.container .box .box-con .mypos0 .form-control:focus{
+	border-bottom: 2px solid purple;
+}
+.container .box .box-con .mypos0 .form-control:focus::placeholder{
+	color:#fff;
+}
+.container .box .box-con .mypos0 .btn{
+	position: absolute;
+	left: 37.5%;
+	outline: none;
+	border:none;
+	font-size: 20px;
+	padding: 10px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 200px;
+	background: white;
+	color: purple;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+.container .box .box-con .mypos0 .btn:nth-child(2){
+	position: absolute;
+	left: 37.5%;
+	background: purple;
+	color: #fff;
+	clip-path: polygon(0% 0%, 50% 0, 60% 50%, 50% 99%, 0% 100%);
+	z-index: 2;
+	transition: all 0.5s;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.container .box .box-con .mypos0 .btn:nth-child(2):hover{
+	clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+}
+.container .box .box-con .mypos0 .btn:hover ~ .btn:nth-child(2) {
+clip-path: polygon(0% 0%, 0 0, 0 50%, 0 100%, 0% 100%);
+}
+.container .box .box-con .mypos0 .resutl-control{
+	width: 300px;
+	height: 40px;
+	outline: none;
+	background: transparent;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 2px solid #eb5744;
+	border-radius: 0%;
+	text-align: center;
+	font-size: 20px;
+	color: #eb5744;
+	font-weight: bold;
+	font-family: 'comic sans ms';
+	transition: all 0.6s;
+	pointer-events: none;
+}
