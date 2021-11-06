@@ -116,7 +116,6 @@ body{
 	padding: 10px;
 	letter-spacing: 5px;
 	font-weight: bold;
-	font-family: 'cooper black';
 	cursor: pointer;
 	width: 200px;
 	background: white;
@@ -169,6 +168,7 @@ clip-path: polygon(0% 0%, 0 0, 0 50%, 0 100%, 0% 100%);
 	padding: 10px;
 	letter-spacing: 2px;
 	font-weight: bold;
+	font-family: 'cooper black';
 	cursor: pointer;
 	width: 150px;
 	background: #dc3545;
