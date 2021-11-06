@@ -158,6 +158,27 @@ clip-path: polygon(0% 0%, 0 0, 0 50%, 0 100%, 0% 100%);
 	transition: all 0.6s;
 	pointer-events: none;
 }
+.container .box-con .mypos0 .btn-yellow{
+	position: absolute;
+	bottom: 1.2%;
+	left: 41.5%;
+	outline: none;
+	border:none;
+	font-size: 18px;
+	padding: 10px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	cursor: pointer;
+	width: 150px;
+	background: #dc3545;
+	color: #fff;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+.container .box-con .mypos0 .btn-yellow:hover{
+color:#fff;background-color:#bb2d3b;border-color:#b02a37;
+
+}
 .container .box .links a .img1{
 	position: absolute;
 	bottom: 2%;
