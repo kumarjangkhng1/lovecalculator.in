@@ -16,8 +16,8 @@
 			alert('Enter Please Lover Name');
 			return;
 		}
-		var resultsh = document.getElementById('futureper').innerHTML = Math.floor(Math.random()*100);
-		var resultsh1 = document.getElementById('futureper1').innerHTML = Math.floor(Math.random()*100) ;
+		var resultsh = document.getElementById('futureper').innerHTML = Math.floor(10+Math.random()*50);
+		var resultsh1 = document.getElementById('futureper1').innerHTML = Math.floor(10+Math.random()*50) ;
 		// resultsh.style['font-size']='40px';
 
 		document.getElementById('resultsh').value=Number(resultsh)+Number(resultsh1) +'%';
